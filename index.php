@@ -1,4 +1,4 @@
-
+<?php
         $tran_id="bus_".uniqid();
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, 'https://sandbox.sslcommerz.com/gwprocess/v4/api.php');
@@ -40,3 +40,4 @@
         $result=json_decode($result,TRUE);
         echo "<pre>";
         print_r($result);
+?>
